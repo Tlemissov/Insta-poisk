@@ -1269,3 +1269,417 @@ DEBUG 2019-02-11 15:28:46,781 [17   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub -
 DEBUG 2019-02-11 15:28:46,782 [17   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: RSs3bstvFIM4XtR4WWTHqw
 INFO  2019-02-11 15:28:53,106 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js.map  
 INFO  2019-02-11 15:28:53,151 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.7415ms 404 
+DEBUG 2019-02-11 15:29:29,626 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-02-11 15:29:29,655 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-02-11 15:29:29,674 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.Web.Startup.InstaPoiskWebMvcModule, InstaPoisk.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,677 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskWebCoreModule, InstaPoisk.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,677 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskApplicationModule, InstaPoisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,677 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskCoreModule, InstaPoisk.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,678 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,678 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,678 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,678 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,679 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.EntityFrameworkCore.InstaPoiskEntityFrameworkModule, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,679 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,679 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,680 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,680 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,680 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,680 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:29,684 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-02-11 15:29:29,749 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:29:29,749 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:29:29,749 [1    ] o.Configuration.LanguageManagementConfig - Converted InstaPoisk (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:29:29,749 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:29:30,010 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: InstaPoisk.EntityFrameworkCore.InstaPoiskDbContext, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:29:30,435 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-02-11 15:29:30,491 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-02-11 15:29:30,533 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-02-11 15:29:30,616 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: InstaPoisk
+DEBUG 2019-02-11 15:29:30,644 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-02-11 15:29:30,675 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-11 15:29:30,716 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-02-11 15:29:30,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-02-11 15:29:30,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.CreateUserDto
+DEBUG 2019-02-11 15:29:30,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.UserDto
+DEBUG 2019-02-11 15:29:30,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-02-11 15:29:30,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-02-11 15:29:30,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.CreateRoleDto
+DEBUG 2019-02-11 15:29:30,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.PermissionDto
+DEBUG 2019-02-11 15:29:30,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.RoleDto
+DEBUG 2019-02-11 15:29:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-02-11 15:29:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.TenantDto
+DEBUG 2019-02-11 15:29:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-02-11 15:29:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange.TenantChangeViewModel
+INFO  2019-02-11 15:29:35,316 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin/Users  
+INFO  2019-02-11 15:29:35,316 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin/Roles  
+INFO  2019-02-11 15:29:35,316 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:35,316 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:36,502 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1191.6548ms 200 application/json
+INFO  2019-02-11 15:29:36,502 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1194.256ms 200 application/json
+INFO  2019-02-11 15:29:36,512 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=IXhpcIy5aIEJnRLSUERMsQ  
+INFO  2019-02-11 15:29:36,635 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=gqx0kp3GDy75OlEzFjom4w  
+INFO  2019-02-11 15:29:36,776 [10   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+INFO  2019-02-11 15:29:36,776 [14   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+INFO  2019-02-11 15:29:36,867 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Users"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:36,867 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Roles"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc)
+DEBUG 2019-02-11 15:29:36,909 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"IXhpcIy5aIEJnRLSUERMsQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:36.8024512+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:36,909 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"gqx0kp3GDy75OlEzFjom4w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:36.8024494+06:00","Properties":{}}
+INFO  2019-02-11 15:29:37,743 [12   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:37,743 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:37,876 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:37,876 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:38,602 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 723.242ms.
+INFO  2019-02-11 15:29:38,625 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 748.614ms.
+INFO  2019-02-11 15:29:38,728 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:38,728 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:39,555 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 872.8498ms.
+INFO  2019-02-11 15:29:39,555 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 872.8166ms.
+INFO  2019-02-11 15:29:39,571 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) in 2700.3168ms
+INFO  2019-02-11 15:29:39,571 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc) in 2700.3128ms
+INFO  2019-02-11 15:29:39,588 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:39,589 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:39,593 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4285.7227ms 200 text/html; charset=utf-8
+INFO  2019-02-11 15:29:39,593 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4285.73ms 200 text/html; charset=utf-8
+INFO  2019-02-11 15:29:39,630 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+DEBUG 2019-02-11 15:29:39,639 [17   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: IXhpcIy5aIEJnRLSUERMsQ
+INFO  2019-02-11 15:29:39,642 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:39,662 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3150.2776ms 101 
+INFO  2019-02-11 15:29:39,698 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:39,740 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:39,796 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 97.7809ms.
+INFO  2019-02-11 15:29:39,803 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:39,805 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 174.4802ms
+INFO  2019-02-11 15:29:39,805 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 217.7839ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:39,855 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 114.5679ms.
+INFO  2019-02-11 15:29:39,856 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:39,857 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 214.6321ms
+INFO  2019-02-11 15:29:39,857 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 268.2356ms 200 application/x-javascript
+INFO  2019-02-11 15:29:39,872 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:39,902 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.0132ms 200 application/json
+INFO  2019-02-11 15:29:39,924 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=fIydkn7LxMjYV46VaqGFYg  
+INFO  2019-02-11 15:29:39,929 [12   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:39,933 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"fIydkn7LxMjYV46VaqGFYg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:39.930252+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:39,981 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: fIydkn7LxMjYV46VaqGFYg
+INFO  2019-02-11 15:29:41,248 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin  
+INFO  2019-02-11 15:29:41,257 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:41,258 [12   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:41,260 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:41,260 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6629ms.
+INFO  2019-02-11 15:29:41,273 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:41,338 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 66.6915ms.
+INFO  2019-02-11 15:29:41,338 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 80.7004ms
+INFO  2019-02-11 15:29:41,338 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.9474ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:41,343 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: fIydkn7LxMjYV46VaqGFYg
+INFO  2019-02-11 15:29:41,344 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1420.0562ms 101 
+INFO  2019-02-11 15:29:41,355 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:41,355 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:41,360 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:41,360 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:41,361 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:41,363 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:41,366 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 3.5562ms.
+INFO  2019-02-11 15:29:41,367 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:41,367 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.6235ms
+INFO  2019-02-11 15:29:41,367 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.8102ms 200 application/x-javascript
+INFO  2019-02-11 15:29:41,382 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 20.0496ms.
+INFO  2019-02-11 15:29:41,382 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:41,382 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 21.7603ms
+INFO  2019-02-11 15:29:41,382 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.9766ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:41,419 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:41,423 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.4403ms 200 application/json
+INFO  2019-02-11 15:29:41,442 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=3yOERGGxVQ7pMz3G9hEhug  
+INFO  2019-02-11 15:29:41,469 [14   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:41,475 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"3yOERGGxVQ7pMz3G9hEhug","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:41.4699969+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:41,475 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 3yOERGGxVQ7pMz3G9hEhug
+INFO  2019-02-11 15:29:42,124 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin/Tenants  
+INFO  2019-02-11 15:29:42,133 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Tenants"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.TenantsController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:42,134 [14   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:42,212 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.TenantsController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:42,276 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.TenantsController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 64.5451ms.
+INFO  2019-02-11 15:29:42,284 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:42,321 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 39.7988ms.
+INFO  2019-02-11 15:29:42,322 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.TenantsController.Index (InstaPoisk.Web.Mvc) in 188.0803ms
+INFO  2019-02-11 15:29:42,322 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 197.6981ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:42,326 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 3yOERGGxVQ7pMz3G9hEhug
+INFO  2019-02-11 15:29:42,326 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 884.047ms 101 
+INFO  2019-02-11 15:29:42,338 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:42,340 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:42,345 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:42,346 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:42,348 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:42,350 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:42,351 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4.9464ms.
+INFO  2019-02-11 15:29:42,352 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:42,352 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.5396ms
+INFO  2019-02-11 15:29:42,352 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.7897ms 200 application/x-javascript
+INFO  2019-02-11 15:29:42,368 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 18.0323ms.
+INFO  2019-02-11 15:29:42,369 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:42,369 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 20.4759ms
+INFO  2019-02-11 15:29:42,369 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.4892ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:42,416 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:42,421 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.21ms 200 application/json
+INFO  2019-02-11 15:29:42,444 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=PnWCQH60WH8b_hdqZ7waKg  
+INFO  2019-02-11 15:29:42,449 [14   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:42,455 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"PnWCQH60WH8b_hdqZ7waKg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:42.4496343+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:42,455 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: PnWCQH60WH8b_hdqZ7waKg
+INFO  2019-02-11 15:29:43,649 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin/Users  
+INFO  2019-02-11 15:29:43,658 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Users"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:43,658 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:43,660 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:43,704 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 43.2614ms.
+INFO  2019-02-11 15:29:43,708 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:43,724 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 16.9948ms.
+INFO  2019-02-11 15:29:43,724 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) in 66.6977ms
+INFO  2019-02-11 15:29:43,725 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.1996ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:43,729 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: PnWCQH60WH8b_hdqZ7waKg
+INFO  2019-02-11 15:29:43,729 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1285.6654ms 101 
+INFO  2019-02-11 15:29:43,745 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:43,745 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:43,753 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:43,754 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:43,755 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:43,755 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:43,759 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 3.9304ms.
+INFO  2019-02-11 15:29:43,759 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:43,759 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 5.5499ms
+INFO  2019-02-11 15:29:43,759 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.4118ms 200 application/x-javascript
+INFO  2019-02-11 15:29:43,773 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 17.409ms.
+INFO  2019-02-11 15:29:43,773 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:43,773 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 19.0431ms
+INFO  2019-02-11 15:29:43,774 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.9375ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:43,821 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:43,827 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.226ms 200 application/json
+INFO  2019-02-11 15:29:43,850 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=D8iua3dtFMdVlqjCwQgz3Q  
+INFO  2019-02-11 15:29:43,857 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:43,860 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"D8iua3dtFMdVlqjCwQgz3Q","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:43.8573807+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:43,860 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: D8iua3dtFMdVlqjCwQgz3Q
+INFO  2019-02-11 15:29:44,481 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Admin/Roles  
+INFO  2019-02-11 15:29:44,489 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "Admin", action = "Index", controller = "Roles"}. Executing action InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:44,490 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-02-11 15:29:44,492 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:44,519 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 27.0612ms.
+INFO  2019-02-11 15:29:44,523 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:44,542 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 18.8812ms.
+INFO  2019-02-11 15:29:44,542 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Areas.Admin.Controllers.RolesController.Index (InstaPoisk.Web.Mvc) in 53.0098ms
+INFO  2019-02-11 15:29:44,543 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 61.5201ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:44,548 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: D8iua3dtFMdVlqjCwQgz3Q
+INFO  2019-02-11 15:29:44,548 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 697.4936ms 101 
+INFO  2019-02-11 15:29:44,560 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:44,560 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:44,565 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:44,565 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:44,566 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:44,566 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:44,572 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 5.8008ms.
+INFO  2019-02-11 15:29:44,573 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:44,573 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 8.1482ms
+INFO  2019-02-11 15:29:44,573 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.8707ms 200 application/x-javascript
+INFO  2019-02-11 15:29:44,585 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 18.382ms.
+INFO  2019-02-11 15:29:44,585 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:44,585 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 20.7035ms
+INFO  2019-02-11 15:29:44,586 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.7458ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:44,628 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:44,633 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.2691ms 200 application/json
+INFO  2019-02-11 15:29:44,655 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=7qMMy7ozCPT9dSF5j3J4wQ  
+INFO  2019-02-11 15:29:44,662 [7    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:44,666 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"7qMMy7ozCPT9dSF5j3J4wQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:44.6632096+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:44,666 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 7qMMy7ozCPT9dSF5j3J4wQ
+INFO  2019-02-11 15:29:47,459 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:47,464 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:47,465 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:47,465 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1265ms.
+INFO  2019-02-11 15:29:47,472 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:47,531 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 62.3487ms.
+INFO  2019-02-11 15:29:47,531 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 67.1485ms
+INFO  2019-02-11 15:29:47,532 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 72.93ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:47,536 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: gqx0kp3GDy75OlEzFjom4w
+INFO  2019-02-11 15:29:47,536 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10901.0619ms 101 
+INFO  2019-02-11 15:29:47,547 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:47,548 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:47,551 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:47,553 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:47,553 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:47,554 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:47,559 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4.2593ms.
+INFO  2019-02-11 15:29:47,559 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:47,559 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.133ms
+INFO  2019-02-11 15:29:47,559 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.4641ms 200 application/x-javascript
+INFO  2019-02-11 15:29:47,567 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 13.7014ms.
+INFO  2019-02-11 15:29:47,567 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:47,567 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 15.3709ms
+INFO  2019-02-11 15:29:47,567 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.8698ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:47,618 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:47,623 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.7921ms 200 application/json
+INFO  2019-02-11 15:29:47,632 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=xx31md3cnkcssYJrKUXzDA  
+INFO  2019-02-11 15:29:47,633 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:47,641 [14   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:47,654 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"xx31md3cnkcssYJrKUXzDA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:47.6415225+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:47,654 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: xx31md3cnkcssYJrKUXzDA
+INFO  2019-02-11 15:29:47,664 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:47,664 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.1732ms 200 image/x-icon
+INFO  2019-02-11 15:29:48,077 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:48,081 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:48,081 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:48,081 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0076ms.
+INFO  2019-02-11 15:29:48,085 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:48,088 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2.6318ms.
+INFO  2019-02-11 15:29:48,088 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 6.9353ms
+INFO  2019-02-11 15:29:48,088 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.0364ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:48,093 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: xx31md3cnkcssYJrKUXzDA
+INFO  2019-02-11 15:29:48,093 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 461.5161ms 101 
+INFO  2019-02-11 15:29:48,111 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:48,111 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:48,116 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,116 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,117 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:48,117 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:48,121 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4.2261ms.
+INFO  2019-02-11 15:29:48,122 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:48,122 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 5.5645ms
+INFO  2019-02-11 15:29:48,122 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.0805ms 200 application/x-javascript
+INFO  2019-02-11 15:29:48,130 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 12.7773ms.
+INFO  2019-02-11 15:29:48,130 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,130 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 14.1281ms
+INFO  2019-02-11 15:29:48,130 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.0464ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,169 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:48,173 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.953ms 200 application/json
+INFO  2019-02-11 15:29:48,182 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=U9niuSJbq1oK0hIx96zbBw  
+INFO  2019-02-11 15:29:48,185 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:48,188 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:48,188 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.5209ms 200 image/x-icon
+INFO  2019-02-11 15:29:48,193 [10   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:48,197 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"U9niuSJbq1oK0hIx96zbBw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:48.1943873+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:48,198 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: U9niuSJbq1oK0hIx96zbBw
+INFO  2019-02-11 15:29:48,378 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:48,382 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:48,382 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:48,382 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0123ms.
+INFO  2019-02-11 15:29:48,386 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:48,389 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2.3422ms.
+INFO  2019-02-11 15:29:48,389 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 6.9316ms
+INFO  2019-02-11 15:29:48,389 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.3008ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:48,403 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: U9niuSJbq1oK0hIx96zbBw
+INFO  2019-02-11 15:29:48,404 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 221.9652ms 101 
+INFO  2019-02-11 15:29:48,416 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:48,416 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:48,422 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,422 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,423 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:48,423 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:48,427 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 3.841ms.
+INFO  2019-02-11 15:29:48,427 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:48,427 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 5.2093ms
+INFO  2019-02-11 15:29:48,427 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.276ms 200 application/x-javascript
+INFO  2019-02-11 15:29:48,438 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 15.2356ms.
+INFO  2019-02-11 15:29:48,438 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,438 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 16.6067ms
+INFO  2019-02-11 15:29:48,438 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.1016ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,475 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:48,479 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.534ms 200 application/json
+INFO  2019-02-11 15:29:48,488 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=0_57IM2CDMVu6D3OrXsEhw  
+INFO  2019-02-11 15:29:48,493 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:48,495 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:48,495 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6767ms 200 image/x-icon
+INFO  2019-02-11 15:29:48,495 [10   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:48,500 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"0_57IM2CDMVu6D3OrXsEhw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:48.4957332+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:48,500 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 0_57IM2CDMVu6D3OrXsEhw
+INFO  2019-02-11 15:29:48,563 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:48,568 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:48,570 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:48,570 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0167ms.
+INFO  2019-02-11 15:29:48,573 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:48,575 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2.1398ms.
+INFO  2019-02-11 15:29:48,575 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 6.9918ms
+INFO  2019-02-11 15:29:48,576 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.0785ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:48,581 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 0_57IM2CDMVu6D3OrXsEhw
+INFO  2019-02-11 15:29:48,581 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.4957ms 101 
+INFO  2019-02-11 15:29:48,591 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:48,592 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:48,595 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,595 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,596 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:48,596 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:48,598 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 2.7554ms.
+INFO  2019-02-11 15:29:48,599 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:48,599 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 3.8243ms
+INFO  2019-02-11 15:29:48,599 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.2084ms 200 application/x-javascript
+INFO  2019-02-11 15:29:48,610 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 13.5344ms.
+INFO  2019-02-11 15:29:48,610 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,610 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 14.7633ms
+INFO  2019-02-11 15:29:48,610 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.5614ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,651 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:48,656 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:48,656 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.7381ms 200 application/json
+INFO  2019-02-11 15:29:48,658 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:48,658 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7475ms 200 image/x-icon
+INFO  2019-02-11 15:29:48,665 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=q8rYKGGUNdvMTXK3lwBD6g  
+INFO  2019-02-11 15:29:48,673 [11   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:48,677 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"q8rYKGGUNdvMTXK3lwBD6g","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:48.6742464+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:48,678 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: q8rYKGGUNdvMTXK3lwBD6g
+INFO  2019-02-11 15:29:48,746 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:48,749 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:48,750 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:48,750 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0091ms.
+INFO  2019-02-11 15:29:48,798 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:48,800 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2.4746ms.
+INFO  2019-02-11 15:29:48,800 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 51.5321ms
+INFO  2019-02-11 15:29:48,801 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.216ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:48,805 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: q8rYKGGUNdvMTXK3lwBD6g
+INFO  2019-02-11 15:29:48,805 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.2437ms 101 
+INFO  2019-02-11 15:29:48,816 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:48,817 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:48,821 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,821 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,822 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:48,822 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:48,826 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 3.3389ms.
+INFO  2019-02-11 15:29:48,826 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:48,826 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 4.632ms
+INFO  2019-02-11 15:29:48,826 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.6499ms 200 application/x-javascript
+INFO  2019-02-11 15:29:48,834 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 11.9973ms.
+INFO  2019-02-11 15:29:48,834 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,835 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 13.3743ms
+INFO  2019-02-11 15:29:48,835 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.8459ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,867 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:48,871 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.2371ms 200 application/json
+INFO  2019-02-11 15:29:48,875 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:48,876 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:48,877 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7912ms 200 image/x-icon
+INFO  2019-02-11 15:29:48,878 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=59pa74GV5bbVgozoRNRlyw  
+INFO  2019-02-11 15:29:48,884 [10   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:48,892 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"59pa74GV5bbVgozoRNRlyw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:48.8848481+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:48,893 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 59pa74GV5bbVgozoRNRlyw
+INFO  2019-02-11 15:29:48,922 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-02-11 15:29:48,926 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
+INFO  2019-02-11 15:29:48,927 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
+INFO  2019-02-11 15:29:48,927 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0317ms.
+INFO  2019-02-11 15:29:48,930 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-02-11 15:29:48,932 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1.9437ms.
+INFO  2019-02-11 15:29:48,932 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 6.5163ms
+INFO  2019-02-11 15:29:48,933 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.5962ms 200 text/html; charset=utf-8
+DEBUG 2019-02-11 15:29:48,937 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 59pa74GV5bbVgozoRNRlyw
+INFO  2019-02-11 15:29:48,937 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.4444ms 101 
+INFO  2019-02-11 15:29:48,947 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636854957706765814  
+INFO  2019-02-11 15:29:48,947 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636854957706765814  
+INFO  2019-02-11 15:29:48,951 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,951 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-02-11 15:29:48,952 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-02-11 15:29:48,952 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-02-11 15:29:48,956 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4.0708ms.
+INFO  2019-02-11 15:29:48,957 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-02-11 15:29:48,957 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 5.6914ms
+INFO  2019-02-11 15:29:48,957 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.9522ms 200 application/x-javascript
+INFO  2019-02-11 15:29:48,965 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 12.6945ms.
+INFO  2019-02-11 15:29:48,965 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,965 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 14.2222ms
+INFO  2019-02-11 15:29:48,965 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.7215ms 200 application/x-javascript; charset=utf-8
+INFO  2019-02-11 15:29:48,998 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:29:49,003 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.2822ms 200 application/json
+INFO  2019-02-11 15:29:49,005 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-02-11 15:29:49,007 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-02-11 15:29:49,007 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.1176ms 200 image/x-icon
+INFO  2019-02-11 15:29:49,009 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=fw4E9xERtJBZQv8bz3jrdA  
+INFO  2019-02-11 15:29:49,015 [13   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:29:49,020 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"fw4E9xERtJBZQv8bz3jrdA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:29:49.016055+06:00","Properties":{}}
+DEBUG 2019-02-11 15:29:49,021 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: fw4E9xERtJBZQv8bz3jrdA
