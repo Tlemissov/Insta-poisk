@@ -1,4 +1,4 @@
-﻿namespace InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange
+﻿namespace InstaPoisk.Web.Views.Shared.Components.TenantChange
 {
     public class ChangeModalViewModel
     {

@@ -3,7 +3,7 @@ using Abp.AutoMapper;
 using InstaPoisk.Sessions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange
+namespace InstaPoisk.Web.Views.Shared.Components.TenantChange
 {
     public class TenantChangeViewComponent : Web.Views.InstaPoiskViewComponent
     {

@@ -1,7 +1,8 @@
 using Abp.AutoMapper;
 using InstaPoisk.Sessions.Dto;
 
-namespace InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange
+namespace InstaPoisk.Web.
+    Views.Shared.Components.TenantChange
 {
     [AutoMapFrom(typeof(GetCurrentLoginInformationsOutput))]
     public class TenantChangeViewModel

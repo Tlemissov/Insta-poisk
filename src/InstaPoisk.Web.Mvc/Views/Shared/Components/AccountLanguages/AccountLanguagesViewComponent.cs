@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Abp.Localization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InstaPoisk.Web.Areas.Admin.Views.Shared.Components.AccountLanguages
+namespace InstaPoisk.Web.Views.Shared.Components.AccountLanguages
 {
     public class AccountLanguagesViewComponent : Web.Views.InstaPoiskViewComponent
     {
