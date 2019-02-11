@@ -1,281 +1,54 @@
-DEBUG 2019-02-07 11:20:32,499 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
-DEBUG 2019-02-07 11:20:32,828 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
-DEBUG 2019-02-07 11:20:32,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.Web.Startup.InstaPoiskWebMvcModule, InstaPoisk.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,846 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskWebCoreModule, InstaPoisk.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskApplicationModule, InstaPoisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskCoreModule, InstaPoisk.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.EntityFrameworkCore.InstaPoiskEntityFrameworkModule, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,850 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,850 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:32,853 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
-DEBUG 2019-02-07 11:20:32,931 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-07 11:20:32,931 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-07 11:20:32,932 [1    ] o.Configuration.LanguageManagementConfig - Converted InstaPoisk (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-07 11:20:32,932 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-07 11:20:33,349 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: InstaPoisk.EntityFrameworkCore.InstaPoiskDbContext, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-07 11:20:34,840 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
-DEBUG 2019-02-07 11:20:34,922 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
-DEBUG 2019-02-07 11:20:34,990 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
-DEBUG 2019-02-07 11:20:35,016 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: InstaPoisk
-DEBUG 2019-02-07 11:20:35,064 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
-DEBUG 2019-02-07 11:20:35,284 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
-DEBUG 2019-02-07 11:20:35,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
-DEBUG 2019-02-07 11:20:35,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Models.TokenAuth.ExternalLoginProviderInfoModel
-DEBUG 2019-02-07 11:20:35,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.CreateUserDto
-DEBUG 2019-02-07 11:20:35,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.UserDto
-DEBUG 2019-02-07 11:20:35,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.TenantLoginInfoDto
-DEBUG 2019-02-07 11:20:35,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.UserLoginInfoDto
-DEBUG 2019-02-07 11:20:35,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.CreateRoleDto
-DEBUG 2019-02-07 11:20:35,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.PermissionDto
-DEBUG 2019-02-07 11:20:35,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.RoleDto
-DEBUG 2019-02-07 11:20:35,341 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.CreateTenantDto
-DEBUG 2019-02-07 11:20:35,341 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.TenantDto
-DEBUG 2019-02-07 11:20:35,341 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
-DEBUG 2019-02-07 11:20:35,341 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Models.Roles.EditRoleModalViewModel
-INFO  2019-02-07 11:20:42,801 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
-INFO  2019-02-07 11:20:42,801 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
-INFO  2019-02-07 11:20:42,892 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 99.2542ms 200 
-INFO  2019-02-07 11:20:46,254 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed out.
-INFO  2019-02-07 11:20:46,259 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.External signed out.
-INFO  2019-02-07 11:20:46,261 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.TwoFactorUserId signed out.
-INFO  2019-02-07 11:20:46,271 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: No principal.
-INFO  2019-02-07 11:20:47,052 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
-WARN  2019-02-07 11:20:47,481 [4    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
-   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
-   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
-   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
-   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
-Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
-   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
-   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
-   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
-   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
-INFO  2019-02-07 11:20:47,486 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
-INFO  2019-02-07 11:20:47,500 [4    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
-INFO  2019-02-07 11:20:47,523 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
-INFO  2019-02-07 11:20:47,529 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 469.682ms
-INFO  2019-02-07 11:20:47,553 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
-INFO  2019-02-07 11:20:47,558 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4768.2477ms 302 
-INFO  2019-02-07 11:20:47,592 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc)
-INFO  2019-02-07 11:20:50,100 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc) with arguments (, /, ) - Validation state: Valid
-INFO  2019-02-07 11:20:50,112 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.4815ms.
-INFO  2019-02-07 11:20:50,368 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
-INFO  2019-02-07 11:20:51,294 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 1074.3824ms.
-INFO  2019-02-07 11:20:51,302 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc) in 3707.4919ms
-INFO  2019-02-07 11:20:51,317 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3761.6369ms 200 text/html; charset=utf-8
-INFO  2019-02-07 11:20:51,467 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
-INFO  2019-02-07 11:20:51,469 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636851352352858788  
-INFO  2019-02-07 11:20:51,473 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636851352512690535  
-INFO  2019-02-07 11:20:51,483 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636851352352858788  
-INFO  2019-02-07 11:20:51,599 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=M_jTufF5sdmRdoFvl4LPRV9_1LOv2qiHtwK7CdBBGxw  
-INFO  2019-02-07 11:20:51,600 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
-INFO  2019-02-07 11:20:51,610 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
-INFO  2019-02-07 11:20:51,618 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
-INFO  2019-02-07 11:20:51,620 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
-INFO  2019-02-07 11:20:51,679 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
-INFO  2019-02-07 11:20:51,682 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.2892ms 304 application/javascript
-INFO  2019-02-07 11:20:51,687 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
-INFO  2019-02-07 11:20:51,693 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 218.8385ms 304 text/css
-INFO  2019-02-07 11:20:51,695 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.css was not modified
-INFO  2019-02-07 11:20:51,698 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.8931ms 304 text/css
-INFO  2019-02-07 11:20:51,714 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\25325\Desktop\InstaPoisk\src\InstaPoisk.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
-INFO  2019-02-07 11:20:51,717 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 245.9084ms 200 application/javascript
-INFO  2019-02-07 11:20:51,739 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
-INFO  2019-02-07 11:20:51,817 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 196.7434ms.
-INFO  2019-02-07 11:20:51,826 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:20:51,833 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 221.4138ms
-INFO  2019-02-07 11:20:51,835 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.0315ms 200 application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:20:51,866 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 125.058ms.
-INFO  2019-02-07 11:20:51,868 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
-INFO  2019-02-07 11:20:51,870 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 180.6037ms
-INFO  2019-02-07 11:20:51,872 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 403.1812ms 200 application/x-javascript
-INFO  2019-02-07 11:20:57,307 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
-INFO  2019-02-07 11:20:57,323 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc)
-INFO  2019-02-07 11:20:57,410 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc) with arguments (InstaPoisk.Web.Models.Account.LoginViewModel, /, ) - Validation state: Valid
-INFO  2019-02-07 11:20:58,267 [15   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
-INFO  2019-02-07 11:20:58,273 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.JsonResult in 859.9514ms.
-INFO  2019-02-07 11:20:58,317 [15   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
-INFO  2019-02-07 11:20:58,333 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc) in 1008.1635ms
-INFO  2019-02-07 11:20:58,336 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1030.1941ms 200 application/json; charset=utf-8
-INFO  2019-02-07 11:20:58,363 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
-INFO  2019-02-07 11:20:58,370 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc)
-INFO  2019-02-07 11:20:58,408 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
-INFO  2019-02-07 11:20:58,413 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
-INFO  2019-02-07 11:20:58,415 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4412ms.
-INFO  2019-02-07 11:20:58,449 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
-INFO  2019-02-07 11:20:59,186 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
-INFO  2019-02-07 11:20:59,193 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc)
-INFO  2019-02-07 11:20:59,203 [14   ] idateAntiforgeryTokenAuthorizationFilter - Antiforgery token validation failed. The provided antiforgery token was meant for a different claims-based user than the current user.
-Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
-   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
-   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
-INFO  2019-02-07 11:20:59,207 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Antiforgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
-INFO  2019-02-07 11:20:59,214 [14   ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 400
-INFO  2019-02-07 11:20:59,216 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.AccountController.Login (InstaPoisk.Web.Mvc) in 20.9215ms
-INFO  2019-02-07 11:20:59,219 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.591ms 400 
-INFO  2019-02-07 11:20:59,232 [14   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLKCNG0MLG9Q", Request id "0HLKCNG0MLG9Q:00000002": the application completed without reading the entire request body.
-INFO  2019-02-07 11:20:59,427 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1000.4923ms.
-INFO  2019-02-07 11:20:59,435 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.HomeController.Index (InstaPoisk.Web.Mvc) in 1062.7111ms
-INFO  2019-02-07 11:20:59,440 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1074.7241ms 200 text/html; charset=utf-8
-INFO  2019-02-07 11:20:59,446 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.css?v=szHusaozbQctTn4FX-3l5E0A5zoxz7-ne4fr8NgWJlw  
-INFO  2019-02-07 11:20:59,452 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.css was not modified
-INFO  2019-02-07 11:20:59,457 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.0917ms 304 text/css
-INFO  2019-02-07 11:20:59,498 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636851352352858788  
-INFO  2019-02-07 11:20:59,501 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636851352352858788  
-INFO  2019-02-07 11:20:59,508 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
-INFO  2019-02-07 11:20:59,511 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
-INFO  2019-02-07 11:20:59,514 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
-INFO  2019-02-07 11:20:59,517 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
-INFO  2019-02-07 11:20:59,522 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 8.6817ms.
-INFO  2019-02-07 11:20:59,525 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
-INFO  2019-02-07 11:20:59,528 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 17.676ms
-INFO  2019-02-07 11:20:59,531 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.3544ms 200 application/x-javascript
-INFO  2019-02-07 11:20:59,565 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 45.4348ms.
-INFO  2019-02-07 11:20:59,568 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:20:59,571 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 54.1891ms
-INFO  2019-02-07 11:20:59,574 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 75.0111ms 200 application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:20:59,815 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
-INFO  2019-02-07 11:20:59,860 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.2489ms 200 application/json
-INFO  2019-02-07 11:21:00,121 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=nFxRMRyz7HRdrnNgXa6AFA  
-INFO  2019-02-07 11:21:00,452 [13   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
-DEBUG 2019-02-07 11:21:00,478 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"nFxRMRyz7HRdrnNgXa6AFA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-07T11:21:00.471128+06:00","Properties":{}}
-DEBUG 2019-02-07 11:21:00,529 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: nFxRMRyz7HRdrnNgXa6AFA
-INFO  2019-02-07 11:21:02,934 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Users  
-INFO  2019-02-07 11:21:02,949 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Users", area = ""}. Executing action InstaPoisk.Web.Controllers.UsersController.Index (InstaPoisk.Web.Mvc)
-INFO  2019-02-07 11:21:02,953 [13   ] uthorization.DefaultAuthorizationService - Authorization was successful.
-INFO  2019-02-07 11:21:03,212 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method InstaPoisk.Web.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) - Validation state: Valid
-INFO  2019-02-07 11:21:03,553 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method InstaPoisk.Web.Controllers.UsersController.Index (InstaPoisk.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 338.7874ms.
-INFO  2019-02-07 11:21:03,564 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
-INFO  2019-02-07 11:21:03,649 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 87.7327ms.
-INFO  2019-02-07 11:21:03,652 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action InstaPoisk.Web.Controllers.UsersController.Index (InstaPoisk.Web.Mvc) in 700.0292ms
-INFO  2019-02-07 11:21:03,657 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 722.2695ms 200 text/html; charset=utf-8
-DEBUG 2019-02-07 11:21:03,693 [16   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: nFxRMRyz7HRdrnNgXa6AFA
-INFO  2019-02-07 11:21:03,707 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3585.4274ms 101 
-INFO  2019-02-07 11:21:03,715 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636851352352858788  
-INFO  2019-02-07 11:21:03,718 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636851352352858788  
-INFO  2019-02-07 11:21:03,724 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
-INFO  2019-02-07 11:21:03,727 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
-INFO  2019-02-07 11:21:03,730 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
-INFO  2019-02-07 11:21:03,733 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
-INFO  2019-02-07 11:21:03,739 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 9.1981ms.
-INFO  2019-02-07 11:21:03,742 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
-INFO  2019-02-07 11:21:03,745 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 18.5541ms
-INFO  2019-02-07 11:21:03,747 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.2694ms 200 application/x-javascript
-INFO  2019-02-07 11:21:03,757 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Users/Index.js?v=GBg0KWvApUu1raAWR2v9j56JXb59ayPiANl7ezEt03Y  
-INFO  2019-02-07 11:21:03,761 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Users/Index.js was not modified
-INFO  2019-02-07 11:21:03,763 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7492ms 304 application/javascript
-INFO  2019-02-07 11:21:03,854 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 49.2813ms.
-INFO  2019-02-07 11:21:03,857 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:21:03,860 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 127.0115ms
-INFO  2019-02-07 11:21:03,865 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 148.9239ms 200 application/x-javascript; charset=utf-8
-INFO  2019-02-07 11:21:03,871 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
-INFO  2019-02-07 11:21:03,879 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.4524ms 200 application/json
-INFO  2019-02-07 11:21:03,908 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=VYjq_oc2PAMESFyQSF64Kg  
-INFO  2019-02-07 11:21:03,918 [7    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
-DEBUG 2019-02-07 11:21:03,924 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"VYjq_oc2PAMESFyQSF64Kg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-07T11:21:03.9186998+06:00","Properties":{}}
-DEBUG 2019-02-07 11:21:03,925 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: VYjq_oc2PAMESFyQSF64Kg
-DEBUG 2019-02-07 11:21:06,050 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: VYjq_oc2PAMESFyQSF64Kg
-INFO  2019-02-07 11:21:06,178 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2148.1311ms 101 
-DEBUG 2019-02-11 12:16:02,090 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
-DEBUG 2019-02-11 12:16:02,116 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
-DEBUG 2019-02-11 12:16:02,136 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.Web.Startup.InstaPoiskWebMvcModule, InstaPoisk.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,140 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskWebCoreModule, InstaPoisk.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,140 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskApplicationModule, InstaPoisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,140 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskCoreModule, InstaPoisk.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,140 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.EntityFrameworkCore.InstaPoiskEntityFrameworkModule, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,143 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,145 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
-DEBUG 2019-02-11 12:16:02,211 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:16:02,211 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:16:02,211 [1    ] o.Configuration.LanguageManagementConfig - Converted InstaPoisk (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:16:02,211 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:16:02,525 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: InstaPoisk.EntityFrameworkCore.InstaPoiskDbContext, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:16:02,988 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
-DEBUG 2019-02-11 12:16:03,063 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
-DEBUG 2019-02-11 12:16:03,112 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
-DEBUG 2019-02-11 12:16:03,135 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: InstaPoisk
-DEBUG 2019-02-11 12:16:03,162 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
-DEBUG 2019-02-11 12:16:03,282 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
-DEBUG 2019-02-11 12:16:03,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
-DEBUG 2019-02-11 12:16:03,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Models.TokenAuth.ExternalLoginProviderInfoModel
-DEBUG 2019-02-11 12:16:03,327 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.CreateUserDto
-DEBUG 2019-02-11 12:16:03,327 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.UserDto
-DEBUG 2019-02-11 12:16:03,328 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.TenantLoginInfoDto
-DEBUG 2019-02-11 12:16:03,328 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.UserLoginInfoDto
-DEBUG 2019-02-11 12:16:03,328 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.CreateRoleDto
-DEBUG 2019-02-11 12:16:03,328 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.PermissionDto
-DEBUG 2019-02-11 12:16:03,328 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.RoleDto
-DEBUG 2019-02-11 12:16:03,329 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.CreateTenantDto
-DEBUG 2019-02-11 12:16:03,329 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.TenantDto
-DEBUG 2019-02-11 12:16:03,329 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
-DEBUG 2019-02-11 12:16:03,329 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Models.Roles.EditRoleModalViewModel
-INFO  2019-02-11 12:16:08,000 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
-INFO  2019-02-11 12:16:09,393 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1397.9013ms 200 application/json
-INFO  2019-02-11 12:16:09,403 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=Q2tUBGWYQA5aL8DcbbT5jg  
-INFO  2019-02-11 12:16:09,633 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
-DEBUG 2019-02-11 12:16:09,783 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"Q2tUBGWYQA5aL8DcbbT5jg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T12:16:09.6605282+06:00","Properties":{}}
-DEBUG 2019-02-11 12:18:49,666 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
-DEBUG 2019-02-11 12:18:49,686 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
-DEBUG 2019-02-11 12:18:49,700 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.Web.Startup.InstaPoiskWebMvcModule, InstaPoisk.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskWebCoreModule, InstaPoisk.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskApplicationModule, InstaPoisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskCoreModule, InstaPoisk.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.EntityFrameworkCore.InstaPoiskEntityFrameworkModule, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:49,709 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
-DEBUG 2019-02-11 12:18:49,758 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:18:49,758 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:18:49,758 [1    ] o.Configuration.LanguageManagementConfig - Converted InstaPoisk (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:18:49,758 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
-DEBUG 2019-02-11 12:18:50,009 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: InstaPoisk.EntityFrameworkCore.InstaPoiskDbContext, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-02-11 12:18:50,358 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
-DEBUG 2019-02-11 12:18:50,472 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
-DEBUG 2019-02-11 12:18:50,509 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
-DEBUG 2019-02-11 12:18:50,527 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: InstaPoisk
-DEBUG 2019-02-11 12:18:50,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
-DEBUG 2019-02-11 12:18:50,582 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
-DEBUG 2019-02-11 12:18:50,619 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
-DEBUG 2019-02-11 12:18:50,619 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Models.TokenAuth.ExternalLoginProviderInfoModel
-DEBUG 2019-02-11 12:18:50,626 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.CreateUserDto
-DEBUG 2019-02-11 12:18:50,626 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.UserDto
-DEBUG 2019-02-11 12:18:50,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.TenantLoginInfoDto
-DEBUG 2019-02-11 12:18:50,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.UserLoginInfoDto
-DEBUG 2019-02-11 12:18:50,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.CreateRoleDto
-DEBUG 2019-02-11 12:18:50,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.PermissionDto
-DEBUG 2019-02-11 12:18:50,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.RoleDto
-DEBUG 2019-02-11 12:18:50,628 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.CreateTenantDto
-DEBUG 2019-02-11 12:18:50,628 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.TenantDto
-DEBUG 2019-02-11 12:18:50,628 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
-DEBUG 2019-02-11 12:18:50,628 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Models.Roles.EditRoleModalViewModel
-INFO  2019-02-11 12:18:55,485 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
-INFO  2019-02-11 12:18:56,619 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1138.8561ms 200 application/json
-INFO  2019-02-11 12:18:56,621 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=hgsOiCjQYcPrz90UBsuBwg  
-INFO  2019-02-11 12:18:56,814 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
-DEBUG 2019-02-11 12:18:56,950 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"hgsOiCjQYcPrz90UBsuBwg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T12:18:56.8397791+06:00","Properties":{}}
+DEBUG 2019-02-11 15:37:37,760 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-02-11 15:37:37,790 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-02-11 15:37:37,812 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.Web.Startup.InstaPoiskWebMvcModule, InstaPoisk.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,816 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskWebCoreModule, InstaPoisk.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,816 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskApplicationModule, InstaPoisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,817 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.InstaPoiskCoreModule, InstaPoisk.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,817 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,817 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,817 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: InstaPoisk.EntityFrameworkCore.InstaPoiskEntityFrameworkModule, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:37,822 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-02-11 15:37:37,914 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:37:37,914 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:37:37,914 [1    ] o.Configuration.LanguageManagementConfig - Converted InstaPoisk (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:37:37,914 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-11 15:37:38,337 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: InstaPoisk.EntityFrameworkCore.InstaPoiskDbContext, InstaPoisk.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-11 15:37:39,056 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-02-11 15:37:39,135 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-02-11 15:37:39,214 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-02-11 15:37:39,257 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: InstaPoisk
+DEBUG 2019-02-11 15:37:39,337 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-02-11 15:37:39,395 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-11 15:37:39,491 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-02-11 15:37:39,491 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-02-11 15:37:39,500 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.CreateUserDto
+DEBUG 2019-02-11 15:37:39,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Users.Dto.UserDto
+DEBUG 2019-02-11 15:37:39,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-02-11 15:37:39,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-02-11 15:37:39,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.CreateRoleDto
+DEBUG 2019-02-11 15:37:39,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.PermissionDto
+DEBUG 2019-02-11 15:37:39,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Roles.Dto.RoleDto
+DEBUG 2019-02-11 15:37:39,504 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-02-11 15:37:39,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.MultiTenancy.Dto.TenantDto
+DEBUG 2019-02-11 15:37:39,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-02-11 15:37:39,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange.TenantChangeViewModel
+INFO  2019-02-11 15:37:44,480 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:37:44,480 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-02-11 15:37:45,728 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1251.3673ms 200 application/json
+INFO  2019-02-11 15:37:45,728 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1251.3604ms 200 application/json
+INFO  2019-02-11 15:37:45,731 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=54Rdmp6bh8SqGde6vvLb9A  
+INFO  2019-02-11 15:37:45,829 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=jMDAHT5hll9ZNAN7-s1HJw  
+INFO  2019-02-11 15:37:45,974 [7    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+INFO  2019-02-11 15:37:45,974 [12   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-02-11 15:37:46,111 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"54Rdmp6bh8SqGde6vvLb9A","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:37:46.0027017+06:00","Properties":{}}
+DEBUG 2019-02-11 15:37:46,111 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"jMDAHT5hll9ZNAN7-s1HJw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-02-11T15:37:46.0027017+06:00","Properties":{}}
+DEBUG 2019-02-11 15:37:59,787 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: jMDAHT5hll9ZNAN7-s1HJw
+INFO  2019-02-11 15:37:59,808 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13979.4354ms 101 

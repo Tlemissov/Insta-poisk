@@ -1,15 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Abp.AspNetCore.Mvc.Authorization;
-using InstaPoisk.Controllers;
+﻿using InstaPoisk.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace InstaPoisk.Web.Controllers
 {
-    [AbpMvcAuthorize]
     public class HomeController : InstaPoiskControllerBase
     {
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }
-	}
+    }
 }
