@@ -26,8 +26,8 @@ using InstaPoisk.Controllers;
 using InstaPoisk.Identity;
 using InstaPoisk.MultiTenancy;
 using InstaPoisk.Sessions;
-using InstaPoisk.Web.Areas.Admin.Views.Shared.Components.TenantChange;
 using InstaPoisk.Web.Models.Account;
+using InstaPoisk.Web.Views.Shared.Components.TenantChange;
 
 namespace InstaPoisk.Web.Controllers
 {
@@ -375,7 +375,7 @@ namespace InstaPoisk.Web.Controllers
 
         public string GetAppHomeUrl()
         {
-            return Url.Action("Index", "Home");
+            return Url.Action("Index", "Home", new {area = "Admin"});
         }
 
         #endregion
@@ -385,7 +385,7 @@ namespace InstaPoisk.Web.Controllers
         public async Task<ActionResult> TenantChangeModal()
         {
             var loginInfo = await _sessionAppService.GetCurrentLoginInformations();
-            return View("/Areas/Admin/Views/Shared/Components/TenantChange/_ChangeModal.cshtml", new ChangeModalViewModel
+            return View("/Views/Shared/Components/TenantChange/_ChangeModal.cshtml", new ChangeModalViewModel
             {
                 TenancyName = loginInfo.Tenant?.TenancyName
             });

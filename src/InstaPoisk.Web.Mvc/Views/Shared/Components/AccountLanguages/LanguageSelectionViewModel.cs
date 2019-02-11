@@ -2,7 +2,7 @@
 using Abp.Localization;
 using Microsoft.AspNetCore.Http;
 
-namespace InstaPoisk.Web.Areas.Admin.Views.Shared.Components.AccountLanguages
+namespace InstaPoisk.Web.Views.Shared.Components.AccountLanguages
 {
     public class LanguageSelectionViewModel
     {
