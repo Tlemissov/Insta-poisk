@@ -3,13 +3,8 @@
 @using Abp.Configuration.Startup
 @using Abp.Web.Mvc.Alerts
 @using Abp.Web.Security.AntiForgery
-@using InstaPoisk
 @using InstaPoisk.Configuration
 @using InstaPoisk.Web.Resources
-@using InstaPoisk.Web.Views.Shared.Components.SideBarNav
-@using InstaPoisk.Web.Views.Shared.Components.SideBarUserArea
-@using InstaPoisk.Web.Views.Shared.Components.TopBarLanguageSwitch
-@using InstaPoisk.Web.Views.Shared.Components.RightSideBar
 @inject InstaPoisk.Timing.AppTimes AppTimes
 @inject IAbpAntiForgeryManager AbpAntiForgeryManager
 @inject IMultiTenancyConfig MultiTenancyConfig
@@ -65,158 +60,63 @@
     </script>
 
 </head>
-<body class="@("theme-" + uiTheme)">
-
-    <!-- Page Loader -->
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="preloader">
-                <div class="spinner-layer pl-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-            <p>@L("PleaseWait")</p>
-        </div>
+<body>
+<section class="content">
+    <div class="container-fluid">
+        @RenderBody()
     </div>
-    <!-- #END# Page Loader -->
-    <!-- Overlay For Sidebars -->
-    <div class="overlay"></div>
-    <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="@L("StartTyping")...">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
-    <!-- #END# Search Bar -->
-    <!-- Top Bar -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="fa fa-cubes"></i> InstaPoisk</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-                    <!-- #END# Call Search -->
+</section>
 
-                    @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
+<environment names="Development">
+    <script src="~/lib/json2/json2.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
+    <script src="~/lib/moment/min/moment-with-locales.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
+    <script src="~/lib/blockUI/jquery.blockUI.js" asp-append-version="true"></script>
+    <script src="~/lib/toastr/toastr.js" asp-append-version="true"></script>
+    <script src="~/lib/sweetalert/dist/sweetalert.min.js" asp-append-version="true"></script>
+    <script src="~/lib/spin.js/spin.js" asp-append-version="true"></script>
+    <script src="~/lib/spin.js/jquery.spin.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap-select/dist/js/bootstrap-select.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-slimscroll/jquery.slimscroll.js" asp-append-version="true"></script>
+    <script src="~/lib/Waves/dist/waves.js" asp-append-version="true"></script>
+    <script src="~/lib/push.js/push.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/abp.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js" asp-append-version="true"></script>
+    <script src="~/js/admin.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/Shared/_Layout.js" asp-append-version="true"></script>
 
-                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- #Top Bar -->
-    <section>
-        <aside id="leftsidebar" class="sidebar">
+    @if (CultureInfo.CurrentUICulture.Name != "en")
+    {
+        <script src="~/lib/jquery-validation/src/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>
+    }
+</environment>
 
-            @await Component.InvokeAsync(typeof(SideBarUserAreaViewComponent))
-            @await Component.InvokeAsync(typeof(SideBarNavViewComponent), new { activeMenu = ViewBag.CurrentPageName })
+<environment names="Staging,Production">
+    <script src="~/view-resources/Views/_Bundles/shared-layout.min.js" asp-append-version="true"></script>
+</environment>
 
-            <!-- Footer -->
-            <div class="legal">
-                <div class="copyright">
-                    &copy; @DateTime.Now.Year <a href="javascript:void(0);">InstaPoisk</a>.
-                </div>
-                <div class="version">
-                    <b>@L("Version") </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]
-                </div>
-            </div>
-            <!-- #Footer -->
-        </aside>
-
-        @await Component.InvokeAsync(typeof(RightSideBarViewComponent))
-
-    </section>
-
-    <section class="content">
-        <div class="container-fluid">
-            @if (AlertManager.Alerts.Any())
-            {
-                <div id="AbpPageAlerts">
-                    @foreach (var alertMessage in AlertManager.Alerts)
-                    {
-                        <div class="alert alert-@alertMessage.Type.ToString().ToLower() @(alertMessage.Dismissible ? "alert-dismisable" : "")" role="alert">
-                            <h4 class="alert-heading">
-                                @alertMessage.Title
-                                @if (alertMessage.Dismissible)
-                                {
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                }
-                            </h4>
-                            <p>@alertMessage.Text</p>
-                        </div>
-                    }
-                </div>
-            }
-
-            @RenderBody()
-        </div>
-    </section>
-
-    <environment names="Development">
-        <script src="~/lib/json2/json2.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
-        <script src="~/lib/moment/min/moment-with-locales.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
-        <script src="~/lib/blockUI/jquery.blockUI.js" asp-append-version="true"></script>
-        <script src="~/lib/toastr/toastr.js" asp-append-version="true"></script>
-        <script src="~/lib/sweetalert/dist/sweetalert.min.js" asp-append-version="true"></script>
-        <script src="~/lib/spin.js/spin.js" asp-append-version="true"></script>
-        <script src="~/lib/spin.js/jquery.spin.js" asp-append-version="true"></script>
-        <script src="~/lib/bootstrap-select/dist/js/bootstrap-select.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery-slimscroll/jquery.slimscroll.js" asp-append-version="true"></script>
-        <script src="~/lib/Waves/dist/waves.js" asp-append-version="true"></script>
-        <script src="~/lib/push.js/push.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/abp.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js" asp-append-version="true"></script>
-        <script src="~/js/admin.js" asp-append-version="true"></script>
-        <script src="~/js/main.js" asp-append-version="true"></script>
-        <script src="~/view-resources/Views/Shared/_Layout.js" asp-append-version="true"></script>
-
-        @if (CultureInfo.CurrentUICulture.Name != "en")
-        {
-            <script src="~/lib/jquery-validation/src/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>
-        }
-    </environment>
-
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/_Bundles/shared-layout.min.js" asp-append-version="true"></script>
-    </environment>
-
-    <script>
+<script>
     // Localizing momentjs
     moment.locale('@CultureInfo.CurrentUICulture.Name');
-    </script>
+</script>
 
-    <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
-    <script src="~/AbpServiceProxies/GetAll?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
-    <script src="~/AbpScripts/GetScripts?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
+<!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
+<script src="~/AbpServiceProxies/GetAll?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
+<script src="~/AbpScripts/GetScripts?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
 
-    <script src="~/lib/signalr-client/signalr.min.js" asp-append-version="true"></script>
-    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js" asp-append-version="true"></script>
+<script src="~/lib/signalr-client/signalr.min.js" asp-append-version="true"></script>
+<script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js" asp-append-version="true"></script>
 
-    @WebResourceManager.RenderScripts()
+@WebResourceManager.RenderScripts()
 
-    <!-- View specific scripts -->
-    @RenderSection("scripts", required: false)
+<!-- View specific scripts -->
+@RenderSection("scripts", required: false)
 </body>
 </html>
