@@ -91,5 +91,10 @@
     <text name="StartTyping">Start Typing</text>
     <text name="Skins">Skins</text>
     <text name="Settings">Settings</text>
+    <text name="Reference">Reference</text>
+    <text name="Category">Category</text>
+    <text name="Menu">Menu</text>
+    <text name="Section">Section</text>
+    <text name="SectionType">Section type</text>
   </texts>
 </localizationDictionary>

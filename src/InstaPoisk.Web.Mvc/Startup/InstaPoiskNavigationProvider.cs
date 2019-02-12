@@ -44,6 +44,34 @@ namespace InstaPoisk.Web.Startup
                         icon: "local_offer",
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Reference,
+                        L("Reference"),
+                        url: "Admin/Roles",
+                        icon: "book"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Menu,
+                            L("Menu"),
+                            url: "Admin/Reference/Menu",
+                            icon: "local_offer"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Section,
+                            L("Section"),
+                            url: "Admin/Reference/Section",
+                            icon: "local_offer"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.SectionType,
+                            L("SectionType"),
+                            url: "Admin/Reference/SectionType",
+                            icon: "local_offer"
+                        )
+                    )
                 );
         }
 

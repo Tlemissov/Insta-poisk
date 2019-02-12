@@ -1,0 +1,61 @@
+﻿@using InstaPoisk.References.Dto
+@using InstaPoisk.Web.Models.Common.Modals
+@model InstaPoisk.Web.Areas.Admin.Models.Reference.ReferenceViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Areas/Admin/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel("Справочник"))
+
+<div class="modal-body">
+    <form name="CreateOrEditModal" role="form" novalidate class="form-validation">
+        <input type="hidden" id="ItemId" name="Id" value="@Model.Id" />
+        <input type="hidden" name="Type" value="@((int)Model.Type)" />
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input id="Name" type="text" name="Name" value="@Model.Name" required maxlength="64" class="validate form-control">
+                        <label for="Name" class="form-label">Названия</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @if (Model.Type == ReferenceEnum.SubCategory)
+        {
+            <div class="row clearfix" style="margin-top:10px;">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="Name" class="form-label">Раздел @Model.CategoryId</label>
+                        <select class="selectpicker form-control" title="Ничего не выбрано"  name="CategoryId" required id="CategoryId">
+                            @foreach (var item in Model.Categories)
+                            {
+                                <!option @(Model.CategoryId == item.Id ? "selected" : "") value="@item.Id">@item.Name</!option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (Model.Type != ReferenceEnum.Category)
+        {
+            <div class="row clearfix" style="margin-top:10px;">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="Name" class="form-label">Раздел</label>
+                        <select class="selectpicker form-control" multiple id="SubList">
+                            @foreach (var item in Model.Types)
+                            {
+                                <!option @(Model.List.Contains(item.Id)  ? "selected" : "") value="@item.Id">@item.Name</!option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        }
+    </form>
+</div>
+
+@Html.Partial("~/Areas/Admin/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Areas/Admin/References/_CreateOrEditCategoryModal.js" asp-append-version="true"></script>
