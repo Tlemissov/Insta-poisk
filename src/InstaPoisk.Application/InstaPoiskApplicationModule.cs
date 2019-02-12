@@ -1,4 +1,5 @@
 ﻿using Abp.AutoMapper;
+using Abp.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using InstaPoisk.Authorization;
@@ -13,6 +14,11 @@ namespace InstaPoisk
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<InstaPoiskAuthorizationProvider>();
+
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(mapper =>
+            {
+                CustomDtoMapper.CreateMappings(mapper);
+            });
         }
 
         public override void Initialize()

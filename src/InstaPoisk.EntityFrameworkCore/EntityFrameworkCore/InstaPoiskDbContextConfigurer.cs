@@ -7,6 +7,7 @@ namespace InstaPoisk.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<InstaPoiskDbContext> builder, string connectionString)
         {
+            builder.UseLazyLoadingProxies();
             builder.UseNpgsql(connectionString);
         }
 

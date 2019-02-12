@@ -148,5 +148,11 @@
     "inputFiles": [
       "wwwroot/view-resources/Views/Shared/Components/TenantChange/Default.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Areas/Admin/References/Category.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Areas/Admin/References/Category.js"
+    ]
   }
 ]

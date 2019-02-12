@@ -12,7 +12,16 @@
     <RootNamespace>InstaPoisk</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Localization\SourceFiles\*.xml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-es.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-fr.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-it.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-ja.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-lt.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-nl.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-pt-BR.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-tr.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\InstaPoisk.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp.AutoMapper" Version="4.1.0" />
