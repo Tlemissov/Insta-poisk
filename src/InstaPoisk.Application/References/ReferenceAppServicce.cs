@@ -173,6 +173,12 @@ namespace InstaPoisk.References
             }
         }
 
+        public async Task<List<MenuCategoryDto>> GetCategoryForMenu()
+        {
+            var categories = await _categoryRepository.GetAllListAsync();
+            return ObjectMapper.Map<List<MenuCategoryDto>>(categories);
+        }
+
         private async Task SetSubItems(SubItemsDto input)
         {
             switch (input.Type)
