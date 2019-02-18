@@ -2,6 +2,7 @@
 using Abp.Zero.EntityFrameworkCore;
 using InstaPoisk.Authorization.Roles;
 using InstaPoisk.Authorization.Users;
+using InstaPoisk.InstaAccounts;
 using InstaPoisk.MultiTenancy;
 using InstaPoisk.References;
 
@@ -14,6 +15,8 @@ namespace InstaPoisk.EntityFrameworkCore
         public virtual DbSet<SubCategory> SubCategories { get; set; }
 
         public virtual DbSet<SubCategoryType> SubCategoryTypes { get; set; }
+
+        public virtual DbSet<InstaAccount> InstaAccounts { get; set; }
         
         public InstaPoiskDbContext(DbContextOptions<InstaPoiskDbContext> options)
             : base(options)
@@ -26,15 +29,26 @@ namespace InstaPoisk.EntityFrameworkCore
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<SubCategoryToType>()
-                .HasKey(bc => new { bc.SubCategorId, bc.TypeId });
+                .HasKey(ct => new { ct.SubCategorId, ct.TypeId });
             modelBuilder.Entity<SubCategoryToType>()
-                .HasOne(bc => bc.SubCategory)
-                .WithMany(b => b.SubCategoryToTypes)
-                .HasForeignKey(bc => bc.SubCategorId);
-            modelBuilder.Entity<SubCategoryToType>()
-                .HasOne(bc => bc.Type)
+                .HasOne(ct => ct.SubCategory)
                 .WithMany(c => c.SubCategoryToTypes)
-                .HasForeignKey(bc => bc.TypeId);
+                .HasForeignKey(ct => ct.SubCategorId);
+            modelBuilder.Entity<SubCategoryToType>()
+                .HasOne(ct => ct.Type)
+                .WithMany(t => t.SubCategoryToTypes)
+                .HasForeignKey(ct => ct.TypeId);
+
+            modelBuilder.Entity<InstaAccountToSubCategory>()
+                .HasKey(ac => new { ac.AccountId, ac.CategoryId });
+            modelBuilder.Entity<InstaAccountToSubCategory>()
+                .HasOne(ac => ac.Account)
+                .WithMany(a => a.SubCategories)
+                .HasForeignKey(ac => ac.AccountId);
+            modelBuilder.Entity<InstaAccountToSubCategory>()
+                .HasOne(ac => ac.Category)
+                .WithMany(c => c.InstaAccounts)
+                .HasForeignKey(ac => ac.CategoryId);
         }
     }
 }

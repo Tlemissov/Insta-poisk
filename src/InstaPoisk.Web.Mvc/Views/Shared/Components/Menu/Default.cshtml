@@ -9,7 +9,7 @@
         <ul class="dropdown-menu">
             @foreach (var subCategories in category.SubCategories)
             {
-            <li class="dropdown-item"><a href="" class="nav-link">@subCategories.Name</a></li>
+            <li class="dropdown-item"><a asp-action="Index" asp-controller="InstaList" asp-route-categoryId="@subCategories.Id" class="nav-link">@subCategories.Name</a></li>
             }
         </ul>
     </li>

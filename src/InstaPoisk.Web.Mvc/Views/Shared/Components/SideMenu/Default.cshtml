@@ -1,0 +1,20 @@
+﻿
+@model List<InstaPoisk.Common.EntityNameDto>
+
+
+<div class="panel panel-default sidebar-menu">
+    <div class="panel-heading">
+        <h3 class="h4 panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills flex-column text-sm category-menu">
+            @foreach (var category in Model)
+            {
+                <li class="nav-item">
+                    <a asp-action="Index" asp-controller="InstaList" asp-route-categoryId="@ViewBag.CategoryId" asp-route-subcategoryId="@category.Id" class="nav-link d-flex align-items-center justify-content-between @(ViewBag.SubCategoryId == category.Id ? "active" : "") "><span>@category.Name </span></a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+﻿@using InstaPoisk.InstaAccounts
+@using InstaPoisk.Web.Models.Common.Modals
+@model InstaPoisk.Web.Areas.Admin.Models.InstaAccounts.InstaAccountViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Areas/Admin/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel("Instagram аккаунт"))
+
+<div class="modal-body">
+    <form name="CreateOrEditModal" role="form" novalidate class="form-validation">
+        <input type="hidden" id="ItemId" name="Id" value="@Model.InstaAccount.Id" />
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input id="Name" type="text" name="Name" value="@Model.InstaAccount.Name" required maxlength="30" class="validate form-control">
+                        <label for="Name" class="form-label">Названия</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input id="UserName" type="text" name="UserName" value="@Model.InstaAccount.UserName" required maxlength="64" class="validate form-control">
+                        <label for="UserName" class="form-label">Логин</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input id="Link" type="text" name="Link" value="@Model.InstaAccount.Link" required maxlength="128" class="validate form-control">
+                        <label for="Link" class="form-label">Ссылка</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="CategoryId" class="form-label">Категория</label>
+                    <select class="selectpicker form-control" title="Ничего не выбрано" name="CategoryId" required id="CategoryId">
+                        @foreach (var item in Model.Categories)
+                        {
+                            <!option @(Model.InstaAccount.CategoryId == item.Id ? "selected" : "") value="@item.Id">@item.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="SubList" class="form-label">Подкатегории</label>
+                    <select class="selectpicker form-control" disabled data-live-search="true" multiple id="SubList">
+                        @foreach (var item in Model.SubCategories)
+                        {
+                            <!option @(Model.InstaAccount.SubItems.Contains(item.Id) ? "selected" : "") value="@item.Id">@item.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <select class="form-control selectpicker" name="Status"  id="Status">
+                        <!option @(Model.InstaAccount.Status == AccountStatusEnum.Simple ? "selected" : "") value="1">@AccountStatusEnum.Simple.ToString()</!option>
+                        <!option @(Model.InstaAccount.Status == AccountStatusEnum.Hot ? "selected" : "") value="2">@AccountStatusEnum.Hot.ToString()</!option>
+                        <!option @(Model.InstaAccount.Status == AccountStatusEnum.Top ? "selected" : "") value="3">@AccountStatusEnum.Top.ToString()</!option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input id="IsPublish" type="checkbox" name="IsPublish" value="true" @(Model.InstaAccount.IsPublish ? "checked" : "") class="form-control" />
+                    <label for="IsPublish" class="form-label">Публиковать</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@Html.Partial("~/Areas/Admin/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Areas/Admin/InstaAccounts/_CreateOrEditModal.js" asp-append-version="true"></script>

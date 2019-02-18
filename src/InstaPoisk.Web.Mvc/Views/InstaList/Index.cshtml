@@ -1,0 +1,73 @@
+﻿@using InstaPoisk.InstaAccounts
+@model List<InstaPoisk.InstaAccounts.Dto.InstaAccountShortListDto>
+
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row d-flex align-items-center flex-wrap">
+            <div class="col-md-7">
+                <h1 class="h2">Category with left sidebar</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb d-flex justify-content-end">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Category with left sidebar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+        <div class="row bar">
+            <div class="col-md-3">
+                <!-- MENUS AND FILTERS-->
+                <div class="panel panel-default sidebar-menu">
+                    <div class="panel-heading">
+                        <h3 class="h4 panel-title">Search</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="form-control"><span class="input-group-btn">
+                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("SideMenu", new {categoryId= ViewBag.CategoryId , subCategoryId= ViewBag.SubCategoryId })
+                <div class="banner"><a href="shop-category.html"><img src="img/banner.jpg" alt="sales 2014" class="img-fluid"></a></div>
+            </div>
+            <div class="col-md-9">
+                <div class="row products">
+                    @foreach (var account in Model)
+                    {
+                        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+                            <div class="product">
+                                <div class="image"><a href="@account.Link" target="_blank" ><img src="images/seendicat.jpg" alt="" class="img-fluid image"></a></div>
+                                <div class="text">
+                                    <h3 class="h5"><a>@account.Name</a></h3>
+                                </div>
+                                <div class="ribbon-holder">
+                                    @{
+                                        switch (account.Status)
+                                        {
+                                            case AccountStatusEnum.Simple:
+                                                break;
+                                            case AccountStatusEnum.Top:
+                                                <div class="ribbon">top</div>
+                                                break;
+                                            case AccountStatusEnum.Hot:
+                                                <div class="ribbon sale">hot</div>
+                                                        break;
+                                        }
+                                      }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

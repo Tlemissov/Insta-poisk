@@ -3,15 +3,17 @@ using System;
 using InstaPoisk.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace InstaPoisk.Migrations
 {
     [DbContext(typeof(InstaPoiskDbContext))]
-    partial class InstaPoiskDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190213065411_Add_InstaAccount")]
+    partial class Add_InstaAccount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

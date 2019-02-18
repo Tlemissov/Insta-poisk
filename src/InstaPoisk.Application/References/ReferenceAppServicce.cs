@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.UI;
 using InstaPoisk.Common;
 using InstaPoisk.References.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace InstaPoisk.References
 {
@@ -177,6 +179,12 @@ namespace InstaPoisk.References
         {
             var categories = await _categoryRepository.GetAllListAsync();
             return ObjectMapper.Map<List<MenuCategoryDto>>(categories);
+        }
+
+        public async Task<List<EntityNameDto>> GetSubCategoryType(int subCategoryId)
+        {
+            var model = await _typeRepository.GetAll().Where(x => x.SubCategoryToTypes.FirstOrDefault(c => c.SubCategorId == subCategoryId) != null).ToListAsync();
+            return ObjectMapper.Map<List<EntityNameDto>>(model);
         }
 
         private async Task SetSubItems(SubItemsDto input)

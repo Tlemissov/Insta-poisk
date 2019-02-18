@@ -96,5 +96,6 @@
     <text name="Menu">Menu</text>
     <text name="Section">Section</text>
     <text name="SectionType">Section type</text>
+    <text name="InstaAccount">Instagram accounts</text>
   </texts>
 </localizationDictionary>

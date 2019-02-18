@@ -21,5 +21,7 @@ namespace InstaPoisk.References
         Task Update(ReferenceDto input);
 
         Task<List<MenuCategoryDto>> GetCategoryForMenu();
+
+        Task<List<EntityNameDto>> GetSubCategoryType(int subCategoryId);
     }
 }
