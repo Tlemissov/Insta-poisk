@@ -59,6 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="wwwroot\vendor\font-awesome\less\" />
+    <Folder Include="wwwroot\vendor\font-awesome\scss\" />
+    <Folder Include="wwwroot\vendor\jquery.counterup\demo\" />
+    <Folder Include="wwwroot\vendor\jquery.scrollto\demo\" />
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />
   </ItemGroup>
 </Project>

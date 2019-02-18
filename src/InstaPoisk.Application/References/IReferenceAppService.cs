@@ -19,5 +19,9 @@ namespace InstaPoisk.References
         Task Delete(int id, ReferenceEnum type);
 
         Task Update(ReferenceDto input);
+
+        Task<List<MenuCategoryDto>> GetCategoryForMenu();
+
+        Task<List<EntityNameDto>> GetSubCategoryType(int subCategoryId);
     }
 }

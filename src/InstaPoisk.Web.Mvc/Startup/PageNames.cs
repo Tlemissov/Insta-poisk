@@ -10,5 +10,6 @@
         public const string Menu = "Menu";
         public const string Section = "Section";
         public const string SectionType = "SectionType";
+        public const string InstaAccount = "InstaAccount";
     }
 }

@@ -986,6 +986,67 @@ namespace InstaPoisk.Migrations
                     b.ToTable("AbpUsers");
                 });
 
+            modelBuilder.Entity("InstaPoisk.InstaAccounts.InstaAccount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CategoryId");
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<bool>("IsPublish");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasMaxLength(128);
+
+                    b.Property<int>("LinkOpened");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(30);
+
+                    b.Property<DateTime?>("PublishDate");
+
+                    b.Property<int>("Status");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(64);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("InstaAccounts");
+                });
+
+            modelBuilder.Entity("InstaPoisk.InstaAccounts.InstaAccountToSubCategory", b =>
+                {
+                    b.Property<int>("AccountId");
+
+                    b.Property<int>("CategoryId");
+
+                    b.HasKey("AccountId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("InstaAccountToSubCategory");
+                });
+
             modelBuilder.Entity("InstaPoisk.MultiTenancy.Tenant", b =>
                 {
                     b.Property<int>("Id")
@@ -1040,7 +1101,9 @@ namespace InstaPoisk.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.HasKey("Id");
 
@@ -1054,7 +1117,9 @@ namespace InstaPoisk.Migrations
 
                     b.Property<int>("CategoryId");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64);
 
                     b.HasKey("Id");
 
@@ -1081,7 +1146,9 @@ namespace InstaPoisk.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64);
 
                     b.HasKey("Id");
 
@@ -1236,6 +1303,27 @@ namespace InstaPoisk.Migrations
                     b.HasOne("InstaPoisk.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
+                });
+
+            modelBuilder.Entity("InstaPoisk.InstaAccounts.InstaAccount", b =>
+                {
+                    b.HasOne("InstaPoisk.References.SubCategory", "Category")
+                        .WithMany("InstaAccounts")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("InstaPoisk.InstaAccounts.InstaAccountToSubCategory", b =>
+                {
+                    b.HasOne("InstaPoisk.InstaAccounts.InstaAccount", "Account")
+                        .WithMany("SubCategories")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("InstaPoisk.References.SubCategoryType", "Category")
+                        .WithMany("InstaAccounts")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("InstaPoisk.MultiTenancy.Tenant", b =>

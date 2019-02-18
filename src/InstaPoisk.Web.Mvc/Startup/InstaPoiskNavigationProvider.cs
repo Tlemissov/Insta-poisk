@@ -22,6 +22,14 @@ namespace InstaPoisk.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
+                        PageNames.InstaAccount,
+                        L("InstaAccount"),
+                        url: "Admin/InstaAccounts",
+                        icon: "people",
+                        requiresAuthentication: true
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         PageNames.Tenants,
                         L("Tenants"),
                         url: "Admin/Tenants",

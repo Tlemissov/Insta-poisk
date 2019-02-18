@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using InstaPoisk.Common;
+using InstaPoisk.InstaAccounts;
+using InstaPoisk.InstaAccounts.Dto;
 using InstaPoisk.References;
 using InstaPoisk.References.Dto;
 
@@ -41,6 +43,10 @@ namespace InstaPoisk
             mapper.CreateMap<ReferenceDto, SubCategoryType>();
 
             mapper.CreateMap<SubCategoryType, ReferenceDto>();
+
+            mapper.CreateMap<InstaAccount, InstaAccountListDto>()
+                .ForMember(dto => dto.Category, option => option.MapFrom(input => input.Category.Name))
+                .ForMember(dto => dto.Status, option => option.MapFrom(input => input.Status.ToString()));
         }
     }
 }

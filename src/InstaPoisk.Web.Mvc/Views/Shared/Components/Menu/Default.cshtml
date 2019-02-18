@@ -1,0 +1,16 @@
+﻿
+@model List<InstaPoisk.References.Dto.MenuCategoryDto>
+
+
+@foreach (var category in Model)
+{
+    <li class="nav-item dropdown">
+        <a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">@category.Name <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            @foreach (var subCategories in category.SubCategories)
+            {
+            <li class="dropdown-item"><a asp-action="Index" asp-controller="InstaList" asp-route-categoryId="@subCategories.Id" class="nav-link">@subCategories.Name</a></li>
+            }
+        </ul>
+    </li>
+}
